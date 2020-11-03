@@ -1,0 +1,482 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+}
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.row {
+    margin: 0 -14px;
+    font-size: 0;
+}
+.colum {
+    margin: 0 14px;
+    width: 219px;
+    display: inline-block;
+    vertical-align: top;
+}
+.top-line {
+    background-color: #1f1f56;
+    padding: 15px 0;
+}
+.top-line ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.top-line li {
+    display: inline-block;
+}
+.top-line a {
+    font-size:  14px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+}
+.main-menu {
+    float: left;
+}
+.main-menu li {
+    margin-right: 30px;
+}
+.main-menu a:hover {
+    color: #fd8300;
+    transition: all .4s ease;
+}
+.social {
+    float: right;
+}
+.social li {
+    margin-left: 25px;
+}
+.social a {
+    display: block;
+    background: url(../img/sprite.png) no-repeat left top;
+}
+.social .fb {
+    width: 10px;
+    height: 19px;
+    background-position: 0 -20px;
+}    
+.fb:hover {
+    width: 10px;
+    height: 19px;
+    background-position: 0 0;
+}
+.social .ins {
+    width: 19px;
+    height: 19px;
+    background-position: -11px -20px;
+}
+.ins:hover {
+    width: 19px;
+    height: 19px;
+    background-position: -11px 0;
+}
+.social .tw {
+    width: 18px;
+    height: 15px;
+    background-position: -30px -20px;
+}
+.tw:hover {
+    width: 18px;
+    height: 15px;
+    background-position: -30px 0;
+}
+.bottom-line {
+    padding: 30px 0;
+}
+.tel ul, .mail-skype ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 24px;
+}
+.tel {
+    font-size: 18px;
+    position: relative;
+}
+.tel:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    right: 8px;
+    bottom: 0;
+}
+.tel a {
+    text-decoration: none;
+    color: #25252c;
+    font-weight: bold;
+}
+.tel1 {
+    position: relative;
+    padding-bottom: 10px;
+}
+.tel1:before {
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png);
+    width: 16px;
+    height: 18px;
+    left: -28px;
+    background-position: -68px 0;
+}
+.mail-skype a {
+    color: #25252c;
+    font-size: 16px;
+}
+.mail {
+    padding-bottom: 12px;
+    position: relative;
+}
+.mail:before {
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png);
+    width: 17px;
+    height: 13px;
+    left: -30px;
+    background-position: -49px 0;
+}
+.skype a {
+    text-decoration: none;
+}
+.skype {
+    position: relative;
+}
+.skype ::before {
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png);
+    width: 18px;
+    height: 18px;
+    left: -30px;
+    background-position: -50px -20px;
+}
+.call {
+    float: right;
+    text-align: right;
+}
+.call a {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #25252c;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+}
+.call a:hover {
+    color: #fd8300
+}
+.main-foto {
+    margin-bottom: 36px;
+    background-image: url(../img/main-foto.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.main-foto span {
+    font-size: 24px;
+}
+sup {
+    font-size: 0.6em;
+}
+.main-foto h2 {
+    margin:0;
+    padding: 58px 0 12px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.content-foto {
+    margin: 0;
+    padding-bottom:15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+.price {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 40px;
+    color: #fd8300;
+    font-weight: bold;
+}
+.main-info {
+    float: left;
+}
+.content {
+    max-width: 670px; 
+}
+.content h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+.content a{
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+/*Сторінка прайс початок */
+.prices-for-services {
+    max-width: 960px;
+}
+.prices-for-services h1 {
+    margin: 0;
+    padding-bottom: 28px;
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.price-p1,
+.price-p2 {
+    margin: 0;
+    padding-bottom: 26px;
+    max-width: 818px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+.table {
+    margin-bottom: 26px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px 3px 0 0; 
+    overflow: hidden;
+}
+.thead {
+    border-radius: 3px;
+    background-color: #1f1f56;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.tbody {
+    background-color: #e4e4ec;
+    color: #666;
+    font-size: 14px;
+}
+.tbody>th {
+    border-top: 1px solid #cdcddd;
+}
+.tbody>tr:hover>td {
+    background-color:#fd8300;
+    color: #fff;
+}
+th,td {
+    padding: 16px 20px;
+    text-align: left;
+}
+.prices-table {
+    text-align: right;
+}
+/*Сторінка Прайс кінець */
+
+/*Сторінка Контакти початок */
+.contacts ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0; 
+    vertical-align: top;
+}
+.contacts li {
+    list-style: none;    
+}
+.rekvizit {
+    float: right;
+}
+.rekvizit p {
+    margin: 0;
+    padding: 0;
+}
+.departmens {
+    padding: 14px 0;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
+}
+/*Сторінка Контакти кінець */
+.hr-line {
+    margin: 32px 0;
+	border: none;
+	border-top: 1px solid #e4e4ec;
+}
+.project h2 {
+    margin: 0;
+    padding-bottom: 24px;
+    font-size: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+.project h3 {
+    padding: 12px 0 9px;
+}
+.project ul {
+    margin-bottom: 38px;
+    padding: 0;
+}
+.project li {
+    padding-bottom: 5px;
+    font-size: 13px;
+    list-style: none;
+    color: #9999a6;
+}
+.project a {
+    font-size: 14px;
+    color: #1f1f56;
+    font-weight: bold;
+    text-decoration: none;
+}
+.project a:hover {
+    text-decoration: underline;
+}
+.aside {
+    float: right;
+}
+.aside p {
+    margin: 0;
+    padding: 16px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    border-radius: 3px 3px 0 0;
+    background-color: #1f1f56;
+}
+.aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.aside-menu a {
+    display: block;
+    background-color: #e4e4ec;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #25252c;
+    font-family: "Arial";
+}
+.aside-menu>li>a {
+    position: relative;
+    border-top: 1px solid #cdcddd;
+}
+.aside-menu>li>a::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    transform: rotate(-45deg);
+    right: 14px;
+    top: 18px;
+}
+.aside-menu>li:hover>a::before {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(45deg);
+}
+.aside-menu>li:hover>a {
+    color: #fff;
+    background-color: #fd8300;
+    border-radius: 0;
+}
+.aside-menu li:hover .sub {
+    display: block;
+}
+.last-line a {
+    border-radius: 0 0 3px 3px;
+}
+.sub {
+    display: none;
+    padding: 0;
+}
+.sub a{
+    color: #666666;
+}
+.sub a:hover {
+    background-color:#cecedd;
+}
+.footer-topline {
+    background-color: #ededf5;
+    padding: 26px 0;
+}
+.info, .company {
+    font-size: 14px;
+}
+.info ul, 
+.company ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.info a,
+.company a {
+    text-decoration: none;
+    color: #666666;
+}
+.info a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+.company a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+.info li,
+.company li {
+    padding-bottom: 10px;
+}
+.copyrait {
+    height: 45px;
+    background-color: #dcdce6;
+}
+.copyrait p {
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #9999a6;
+}
