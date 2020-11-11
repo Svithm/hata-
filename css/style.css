@@ -245,33 +245,18 @@ sup {
     color: #666;
 }
 .content a{
-    color: #666;
+    color: #fd8300;
     font-size: 14px;
     font-weight: bold;
-    text-decoration: none;
-}
-.content a:hover {
-    color: #fd8300;
     text-decoration: underline;
 }
-
 /*Сторінка прайс початок */
 .prices-for-services {
     max-width: 960px;
 }
-.prices-for-services h1 {
-    margin: 0;
-    padding-bottom: 28px;
-    font-size: 30px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-}
 .price-p1,
 .price-p2 {
-    margin: 0;
     padding-bottom: 26px;
-    max-width: 818px;
     font-size: 14px;
     line-height: 24px;
     color: #666;
@@ -280,7 +265,7 @@ sup {
     margin-bottom: 26px;
     width: 100%;
     border-collapse: collapse;
-    border-radius: 3px 3px 0 0; 
+    border-radius: 3px; 
     overflow: hidden;
 }
 .thead {
@@ -296,8 +281,11 @@ sup {
     color: #666;
     font-size: 14px;
 }
-.tbody>th {
-    border-top: 1px solid #cdcddd;
+.tbody>tr {
+    border-bottom: 1px solid #cdcddd;
+}
+.tbody tr:last-child {
+    border-bottom: none;
 }
 .tbody>tr:hover>td {
     background-color:#fd8300;
@@ -398,7 +386,7 @@ th,td {
     color: #25252c;
     font-family: "Arial";
 }
-.aside-menu>li>a {
+.aside-menu li a {
     position: relative;
     border-top: 1px solid #cdcddd;
 }
@@ -435,6 +423,7 @@ th,td {
 }
 .sub a{
     color: #666666;
+    padding-left: 30px;
 }
 .sub a:hover {
     background-color:#cecedd;
