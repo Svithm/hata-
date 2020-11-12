@@ -104,16 +104,19 @@ body {
 .bottom-line {
     padding: 30px 0;
 }
-.tel ul, .mail-skype ul {
+.tel-up ul,
+.tel-down ul, 
+.mail-skype ul {
     margin: 0;
     list-style: none;
     padding-left: 24px;
 }
-.tel {
+.tel-up,
+.tel-down {
     font-size: 18px;
     position: relative;
 }
-.tel:before {
+.tel-up:before {
     content: "";
     position: absolute;
     width: 1px;
@@ -122,7 +125,8 @@ body {
     right: 8px;
     bottom: 0;
 }
-.tel a {
+.tel-up a,
+.tel-down a {
     text-decoration: none;
     color: #25252c;
     font-weight: bold;
