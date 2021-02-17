@@ -312,24 +312,27 @@ th,td {
 .contacts ul{
     display: inline-block;
     margin: 0;
-    padding: 0; 
     vertical-align: top;
 }
 .contacts li {
-    list-style: none;    
+    list-style: none;
+    padding-bottom: 14px;    
+}
+.offise {
+    padding-left: 0;
+}
+.consultation {
+    padding-left: 86px;
 }
 .rekvizit {
     float: right;
 }
 .rekvizit p {
     margin: 0;
-    padding: 0;
 }
 .departmens {
-    padding: 14px 0;
     font-size: 14px;
     color: #666666;
-    font-family: "Arial";
 }
 /*Сторінка Контакти кінець */
 .hr-line {
