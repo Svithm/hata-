@@ -334,6 +334,107 @@ th,td {
     font-size: 14px;
     color: #666666;
 }
+.maps{
+    display: inline-block;
+    margin-right: 20px;
+    border: 0;
+}
+iframe {
+    border: none;
+}
+.send{
+    vertical-align: 20px;
+    width: 466px;
+    height: 302px;
+    display: inline-block;
+}
+.forma{
+    width: 500px;
+}
+.forma input{
+    font-style: italic;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+.form1{
+    margin: 0 3px;
+    width: 230px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.form2{
+    margin: 0 4px;
+    width: 230px;
+    height: 40px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.cont{
+    margin: 0 0 0 7px;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    width: 228px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+}
+.theme{
+    margin: 10px;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    width: 465px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+}
+.text{
+    margin: 0 10px;
+    padding: 15px 0 0 10px;
+    width: 466px;
+    height: 100px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+    resize: horizontal;
+    box-sizing: border-box;
+    border: 1px solid #c4c4d3;
+    border-radius: 3px;
+}
+.registration input{
+    margin: 15px;
+    width: 140px;
+    height: 41px;
+    box-sizing: border-box;
+    border-radius: 21px;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+    border:none;
+    background-color: #fd8300;
+    cursor: pointer;
+}
+.last{
+    padding: 0 0 0 20px;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+.last input{
+    margin: 10px;
+    cursor: pointer;
+}
 /*Сторінка Контакти кінець */
 .hr-line {
     margin: 32px 0;
