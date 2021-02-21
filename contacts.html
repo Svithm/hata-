@@ -90,25 +90,27 @@
             <div class="send">
                 <h3>Форма зворотнього зв’язку</h3>
                 <div class="forma">
-                    <label class="form1">
-                        <input class="cont" type="text" placeholder="Ваше ім’я">
-                    </label>
-                    <label class="form2">
-                        <input class="cont" type="phone" placeholder="Телефон">
-                    </label>
-                    <label>
-                        <input type="email" class="theme" value="" placeholder="Тема повідомлення">
-                    </label>
-                    <label>
-                        <textarea class="text" rows="3" cols="30" maxlength="100"
-                            placeholder="Текст"></textarea>
-                    </label>
-                    <label class="registration">
-                        <input type="submit" value="Відправити">
-                    </label>
-                    <label class="last">
-                        <input type="checkbox">Я бажаю отримувати останні новини
-                    </label>
+                    <form action="sender.php" method="get">
+                        <label class="form1">
+                            <input class="cont" type="text" name="name" placeholder="Ваше ім’я">
+                        </label>
+                        <label class="form2">
+                            <input class="cont" type="phone" name="phone" placeholder="Телефон">
+                        </label>
+                        <label>
+                            <input type="email" class="theme" name="email" placeholder="Ваш емейл">
+                        </label>
+                        <label>
+                            <textarea class="text" name="message" rows="3" cols="30" maxlength="100"
+                                placeholder="Текст"></textarea>
+                        </label>
+                        <label class="registration">
+                            <input type="submit" value="Відправити">
+                        </label>
+                        <label class="last">
+                            <input type="checkbox">Я бажаю отримувати останні новини
+                        </label>
+                    </form>
                 </div>
             </div>
         </div>
