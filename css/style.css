@@ -13,13 +13,11 @@ body {
     margin: 0;
     font-family: Arial;
 }
-.clear:after {
-    content: "";
-    display: block;
-    clear: both;
-}
 .wrapper {
     margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
     max-width: 960px;
 }
 .row {
@@ -51,18 +49,13 @@ body {
     line-height: 24px;
     color: #b1b1d2;
 }
-.main-menu {
-    float: left;
-}
+
 .main-menu li {
     margin-right: 30px;
 }
 .main-menu a:hover {
     color: #fd8300;
     transition: all .4s ease;
-}
-.social {
-    float: right;
 }
 .social li {
     margin-left: 25px;
@@ -105,6 +98,9 @@ body {
     padding: 30px 0;
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.1));
     background-color: #fff;
+}
+.bottom-line-flex {
+    flex-wrap: wrap;
 }
 .tel-up ul,
 .tel-down ul, 
@@ -169,7 +165,7 @@ body {
 .skype {
     position: relative;
 }
-.skype ::before {
+.skype::before {
     content: "";
     position: absolute;
     background: url(../img/sprite.png);
@@ -179,7 +175,6 @@ body {
     background-position: -50px -20px;
 }
 .call {
-    float: right;
     text-align: right;
 }
 .call a {
@@ -232,8 +227,8 @@ sup {
     color: #fd8300;
     font-weight: bold;
 }
-.main-info {
-    float: left;
+.main-flex {
+    display: flex;
 }
 .content {
     max-width: 670px; 
@@ -474,9 +469,6 @@ iframe {
 .project a:hover {
     text-decoration: underline;
 }
-.aside {
-    float: right;
-}
 .aside p {
     margin: 0;
     padding: 16px;
@@ -584,3 +576,50 @@ iframe {
     font-size: 13px;
     color: #9999a6;
 }
+@media screen and (max-width:732px) {
+    .bottom-line {
+        padding-top: 10px;
+        text-align: center;
+    }
+    .bottom-line .tel1:before {
+        left: -10px;
+    }
+    .bottom-line .mail-skype,
+    .bottom-line .call {
+        margin-top: 10px;
+    }
+    .mail::before,
+    .skype::before {
+        left: -24px;
+    }
+    .footer-topline {
+        text-align: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .main-flex {
+        flex-direction: column-reverse;
+    }
+    .main .colum {
+        width: 95%;
+    } 
+    .project {
+        text-align: center;
+    }
+    .footer-topline {
+        text-align: center;
+    }
+    .info ul, .company ul {
+        padding: 0 0 20px 0;
+    }
+}
+@media screen and (max-width:486px) {
+    .tel-up ul, .tel-down ul, .mail-skype ul {
+        padding: 10px 0 10px 24px;
+    }
+    .mail:before,
+    .skype::before,
+    .tel1:before {
+        left: -24px;
+    }
+}   
