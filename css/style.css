@@ -614,6 +614,12 @@ iframe {
     }
 }
 @media screen and (max-width:486px) {
+    .main-menu {
+        width: 178px;
+    }
+    .bottom-line .tel-up {
+        margin-top: 10px;
+    }
     .tel-up ul, .tel-down ul, .mail-skype ul {
         padding: 10px 0 10px 24px;
     }
