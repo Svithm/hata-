@@ -15,7 +15,6 @@ body {
 }
 .wrapper {
     margin: 0 auto;
-    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     max-width: 960px;
@@ -576,6 +575,11 @@ iframe {
     font-size: 13px;
     color: #9999a6;
 }
+@media screen and (max-width:988px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+}
 @media screen and (max-width:732px) {
     .bottom-line {
         padding-top: 10px;
@@ -593,6 +597,9 @@ iframe {
         left: -24px;
     }
     .footer-topline {
+        text-align: center;
+    }
+    .project {
         text-align: center;
     }
 }
@@ -627,5 +634,8 @@ iframe {
     .skype::before,
     .tel1:before {
         left: -24px;
+    }
+    .tel-up:before {
+        height: 70px;
     }
 }   
