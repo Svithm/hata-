@@ -11,9 +11,15 @@
 <body>
     <header>
         <div class="top-line">
-            <div class="wrapper">
+            <div class="wrapper flex">
                 <nav class="main-menu">
-                    <ul>
+                    <input class="checkbox" id="read" type="checkbox" name="menu">
+                    <label for="read">
+                        <span class="gamburger-item"></span>
+                        <span class="gamburger-item"></span>
+                        <span class="gamburger-item"></span>
+                    </label>
+                    <ul class="menu-box">
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
                         <li><a href="price.html">Наші будівлі</a></li>
@@ -30,26 +36,24 @@
         </div>
         <div class="bottom-line">
             <div class="wrapper">
-                <div class="row">
-                    <div class="botom-line-flex">
-                        <div class="logo colum">
-                            <img src="img/logo.png" alt="Хата Плюс">
-                        </div>
-                        <div class="tel-up colum">
-                            <ul>
-                                <li class="tel1"><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
-                                <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
-                            </ul>
-                        </div>
-                        <div class="mail-skype colum">
-                            <ul>
-                                <li class="mail"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></li>
-                                <li class="skype"><a href="skype:hataplus?chat">hataplus</a></li>
-                            </ul>
-                        </div>
-                        <div class="call colum">
-                            <a href="#">Замовити дзвінок</a>
-                        </div>
+                <div class="row flex">
+                    <div class="logo colum">
+                        <img src="img/logo.png" alt="Хата Плюс">
+                    </div>
+                    <div class="tel-up colum">
+                        <ul>
+                            <li class="tel1"><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
+                            <li><a href="tel:+380971002525">+38(097) 100-25-25</a></li>
+                        </ul>
+                    </div>
+                    <div class="mail-skype colum">
+                        <ul>
+                            <li class="mail"><a href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a></li>
+                            <li class="skype"><a href="skype:hataplus?chat">hataplus</a></li>
+                        </ul>
+                    </div>
+                    <div class="call colum">
+                        <a href="#">Замовити дзвінок</a>
                     </div>
                 </div>
             </div>
@@ -63,81 +67,79 @@
         </div>
     </header>
     <main class="main">
-        <div class="wrapper">
-            <div class="main-flex">
-                <div class="main-info">
-                    <section class="content">
-                        <h1>Компанія “Хата Плюс”</h1>
-                        <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
-                            гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом
-                            стала
-                            справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.
-                        </p>
-                        <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова
-                            пропозиція
-                            по
-                            співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна
-                            ділянка,
-                            на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну,
-                            поставити
-                            альтанку і барбекю.</p>
-                        <p><a href="#">Детальніше про нас</a></p>
-                    </section>
-                    <hr class="hr-line">
-                    <div class="project">
-                        <section>
-                            <h2>Популярні проекти</h2>
-                            <div class="row">
-                                <div class="colum">
-                                    <img src="img/edmonton.jpg" alt="котедж edmonton">
-                                    <h3><a href="#">EDMONTON (338 м<sup>2</sup>)</a></h3>
-                                    <ul>
-                                        <li>Загальна площа будови: 312 м<sup>2</sup></li>
-                                        <li>Кількість спалень: 4</li>
-                                        <li>Гараж: 2 авто</li>
-                                    </ul>
-                                </div>
-                                <div class="colum">
-                                    <img src="img/calgary.jpg" alt="котедж calgary">
-                                    <h3><a href="#">MONTREAL (332 м<sup>2</sup>)</a></h3>
-                                    <ul>
-                                        <li>Загальна площа будови: 290 м<sup>2</sup></li>
-                                        <li>Кількість спалень: 3</li>
-                                        <li>Гараж: 2 авто</li>
-                                    </ul>
-                                </div>
-                                <div class="colum">
-                                    <img src="img/montreal.jpg" alt="котедж montreal">
-                                    <h3><a href="#">CALGARY (294 м<sup>2</sup>)</a></h3>
-                                    <ul>
-                                        <li>Загальна площа будови: 272 м<sup>2</sup></li>
-                                        <li>Кількість спалень: 3</li>
-                                        <li>Гараж: 2 авто</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div class="aside row">
-                    <div class="colum">
-                        <p>Категорії проектів</p>
-                        <ul class="aside-menu">
-                            <li><a href="#">Генеральний план</a></li>
-                            <li>
-                                <a href="#">Навколишнє середовище</a>
-                                <ul class="sub">
-                                    <li><a href="#">Продані</a></li>
-                                    <li><a href="#">Заброньованні</a></li>
-                                    <li><a href="#">В процесі будівництва</a></li>
+        <div class="wrapper flex">
+            <div class="main-info">
+                <section class="content">
+                    <h1>Компанія “Хата Плюс”</h1>
+                    <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в
+                        гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом
+                        стала
+                        справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.
+                    </p>
+                    <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова
+                        пропозиція
+                        по
+                        співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна
+                        ділянка,
+                        на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну,
+                        поставити
+                        альтанку і барбекю.</p>
+                    <p><a href="#">Детальніше про нас</a></p>
+                </section>
+                <hr class="hr-line">
+                <div class="project">
+                    <section>
+                        <h2>Популярні проекти</h2>
+                        <div class="row">
+                            <div class="colum">
+                                <img src="img/edmonton.jpg" alt="котедж edmonton">
+                                <h3><a href="#">EDMONTON (338 м<sup>2</sup>)</a></h3>
+                                <ul>
+                                    <li>Загальна площа будови: 312 м<sup>2</sup></li>
+                                    <li>Кількість спалень: 4</li>
+                                    <li>Гараж: 2 авто</li>
                                 </ul>
-                            </li>
-                            <li><a href="#">Умови придбання</a></li>
-                            <li><a href="#">Загородні котеджі</a></li>
-                            <li><a href="#">Інфраструктура</a></li>
-                            <li class="last-line"><a href="#">Готові будинки</a></li>
-                        </ul>
-                    </div>
+                            </div>
+                            <div class="colum">
+                                <img src="img/calgary.jpg" alt="котедж calgary">
+                                <h3><a href="#">MONTREAL (332 м<sup>2</sup>)</a></h3>
+                                <ul>
+                                    <li>Загальна площа будови: 290 м<sup>2</sup></li>
+                                    <li>Кількість спалень: 3</li>
+                                    <li>Гараж: 2 авто</li>
+                                </ul>
+                            </div>
+                            <div class="colum">
+                                <img src="img/montreal.jpg" alt="котедж montreal">
+                                <h3><a href="#">CALGARY (294 м<sup>2</sup>)</a></h3>
+                                <ul>
+                                    <li>Загальна площа будови: 272 м<sup>2</sup></li>
+                                    <li>Кількість спалень: 3</li>
+                                    <li>Гараж: 2 авто</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="aside row">
+                <div class="colum">
+                    <p>Категорії проектів</p>
+                    <ul class="aside-menu">
+                        <li><a href="#">Генеральний план</a></li>
+                        <li>
+                            <a href="#">Навколишнє середовище</a>
+                            <ul class="sub">
+                                <li><a href="#">Продані</a></li>
+                                <li><a href="#">Заброньованні</a></li>
+                                <li><a href="#">В процесі будівництва</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Умови придбання</a></li>
+                        <li><a href="#">Загородні котеджі</a></li>
+                        <li><a href="#">Інфраструктура</a></li>
+                        <li class="last-line"><a href="#">Готові будинки</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -145,7 +147,7 @@
     <footer>
         <div class="footer-topline">
             <div class="wrapper">
-                <div class="row">
+                <div class="row flex">
                     <div class="info colum">
                         <ul>
                             <li><a href="#">Будинки</a></li>
