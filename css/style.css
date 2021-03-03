@@ -22,10 +22,6 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.wrapper-contacts {
-    margin: 0 auto;
-    max-width: 960px;
-}
 .row {
     margin: 0 -14px;
     font-size: 0;
@@ -311,12 +307,15 @@ sup {
     line-height: 24px;
     color: #666;
 }
+.table-scroll {
+    display: block;
+    overflow:scroll;
+}
 .table {
     margin-bottom: 26px;
     width: 100%;
     border-collapse: collapse;
     border-radius: 3px; 
-    overflow: hidden;
 }
 .thead {
     border-radius: 3px;
@@ -636,9 +635,11 @@ iframe {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .tel-up:before {
         display: none;
+    }
+    .table-scroll {
+        overflow: scroll;
     }
 }
 @media screen and (max-width:732px) {
@@ -674,7 +675,6 @@ iframe {
     .menu-box {
         display: none;
         visibility: hidden;
-        
     }
     .gamburger {
         display: block;
@@ -682,9 +682,6 @@ iframe {
     .gamburger-item {
         visibility: visible;
     }
-    /* .main-menu {
-        display: none;
-    } */
     .top-line .menu-box {
         padding-top: 40px;
     }
@@ -714,15 +711,7 @@ iframe {
         padding: 0 0 20px 0;
     }
 }
-/* @media screen and (max-width:501px) {
-    .wrapper {
-        overflow: ;
-    }
-} */
 @media screen and (max-width:486px) {
-    .main-menu {
-        /* width: 178px; */
-    }
     .bottom-line .tel-up {
         margin-top: 10px;
     }
